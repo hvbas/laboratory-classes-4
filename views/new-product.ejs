@@ -8,11 +8,10 @@
       <%- include('partials/navigation', { menuLinks: menuLinks, activeLinkPath:
       activeLinkPath }); %>
       <h1 class="heading">Newest product</h1>
-      <% if (newestProduct?.name) { %>
+      <% if (product) { %>
       <br />
       <div>
-        New product data - Name: <%= newestProduct.name %>, Description: <%=
-        newestProduct.description %>
+        New product data - Name: <%= product %>
       </div>
       <% } else { %>
       <br />
